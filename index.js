@@ -25,14 +25,6 @@ if (!options.password) {
 }
 
 try {
-  const keyObject = keythereum.importFromFile(options.address,options.datadir);
-  const privateKey = keythereum.recover(options.password, keyObject);
-} catch (e) {
-  console.log(chalk.red('Error: ', e.message));
-  process.exit(1);
-}
-
-try {
   const keyObject = keythereum.importFromFile(options.address, options.datadir);
   const privateKey = keythereum.recover(options.password, keyObject);
   console.log(chalk.green(`Address: ${chalk.white(options.address)}`));
