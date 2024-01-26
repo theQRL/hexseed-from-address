@@ -1,0 +1,16 @@
+{
+  "name": "@theqrl/hexseed-from-address",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "hexseed-from-address": "./index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "keythereum": "^2.0.0"
+  }
+}
